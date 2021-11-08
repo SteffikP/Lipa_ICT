@@ -68,6 +68,7 @@ if (Serial.available() > 0) {
 if (text == '5') {
   digitalWrite(MAdr, LOW);
   digitalWrite(MBdr, LOW);
+  analogWrite(MAsp,100);
   analogWrite(MBsp,100);
   Serial.println("Oba vpřed");
  }
@@ -75,6 +76,7 @@ if (text == '5') {
 if (text == '6') {
   digitalWrite(MAdr, HIGH);
   digitalWrite(MBdr, HIGH);
+  analogWrite(MAsp,100);
   analogWrite(MBsp,100);
   Serial.println("Oba vzad");
  }
